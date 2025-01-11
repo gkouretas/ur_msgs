@@ -23,6 +23,7 @@ set(srv_files
   srv/SetIO.srv
   srv/GetRobotSoftwareVersion.srv
   srv/SetForceMode.srv
+  srv/SetForceModeParams.srv
 )
 
 if(BUILD_TESTING)
