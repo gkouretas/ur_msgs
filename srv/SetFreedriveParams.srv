@@ -1,0 +1,19 @@
+uint8 TYPE_POSE = 0   # put pose vector in `pose`
+uint8 TYPE_STRING = 1 # 'tool' or 'base'
+
+uint8 FEATURE_TOOL = 0
+uint8 FEATURE_BASE = 1
+
+# can only be `TYPE_POSE` or `TYPE_STRING` 
+# only relevant is `activate` is true
+uint8 type
+
+# x, y, z, rx, ry, rz
+bool[6] free_axes [1, 1, 1, 1, 1, 1]
+
+# Feature, must be specified if type = TYPE_STRING
+uint8 feature_constant
+float64[6] feature_vector
+
+---
+bool success

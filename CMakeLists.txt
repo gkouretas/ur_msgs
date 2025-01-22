@@ -24,6 +24,7 @@ set(srv_files
   srv/GetRobotSoftwareVersion.srv
   srv/SetForceMode.srv
   srv/SetForceModeParams.srv
+  srv/SetFreedriveParams.srv
 )
 
 if(BUILD_TESTING)
