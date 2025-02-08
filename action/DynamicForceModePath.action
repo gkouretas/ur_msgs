@@ -2,7 +2,9 @@
 # Force mode parameters #
 #########################
 
-# Initial task frame and compliance vectors will be generated via the path, so no need to
+geometry_msgs/PoseStamped task_frame
+
+# Initial compliance vectors will be generated via the path, so no need to
 # have as an action input
 
 # The forces/torques the robot will apply to its environment. This value will be summed
@@ -67,6 +69,6 @@ string error_string
 geometry_msgs/Wrench wrench_path_output  # Wrench from path PID controller
 geometry_msgs/Wrench wrench_total_output # Sum of wrench from baseline+path
 geometry_msgs/Wrench wrench_error        # Compared w/ TCP force sensor
-geometry_msgs/PoseStamped pose_desired   # Desired pose wrt the trajectory
-geometry_msgs/PoseStamped pose_actual    # Actual pose
+geometry_msgs/Pose pose_desired          # Desired pose wrt the trajectory
+geometry_msgs/Pose pose_actual           # Actual pose
 geometry_msgs/Twist pose_error           # Pose error
