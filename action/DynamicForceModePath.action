@@ -57,6 +57,8 @@ float32 wrench_path_ki 0
 float32 wrench_path_kd 0
 float32 wrench_path_max_force_magnitude 0
 float32 wrench_path_max_torque_magnitude 0
+
+float32[6] waypoint_tolerances
 ---
 int32 error_code
 int32 SUCCESSFUL = 0
