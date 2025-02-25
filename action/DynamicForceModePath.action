@@ -73,4 +73,4 @@ geometry_msgs/Wrench wrench_total_output # Sum of wrench from baseline+path
 geometry_msgs/Wrench wrench_error        # Compared w/ TCP force sensor
 geometry_msgs/Pose pose_desired          # Desired pose wrt the trajectory
 geometry_msgs/Pose pose_actual           # Actual pose
-geometry_msgs/Twist pose_error           # Pose error
+geometry_msgs/Pose pose_error           # Pose error
