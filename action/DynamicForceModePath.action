@@ -59,6 +59,9 @@ float32 wrench_path_max_force_magnitude 0
 float32 wrench_path_max_torque_magnitude 0
 
 float32[6] waypoint_tolerances
+float32 ALWAYS_INACTIVE = 1000000000.0
+float32 ALWAYS_ACTIVE = -1.0
+float32[6] compliance_tolerances
 ---
 int32 error_code
 int32 SUCCESSFUL = 0
