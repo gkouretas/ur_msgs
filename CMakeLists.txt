@@ -26,6 +26,7 @@ set(srv_files
   srv/SetForceMode.srv
   srv/SetForceModeParams.srv
   srv/SetFreedriveParams.srv
+  srv/DynamicForceModeSetExecution.srv
 )
 
 set(action_files
