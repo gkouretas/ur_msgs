@@ -71,6 +71,8 @@ int32 INVALID_POSE_DISPLACEMENT = -3
 int32 OLD_HEADER_TIMESTAMP = -4
 string error_string
 ---
+bool is_paused
+float32 progress_percentage
 geometry_msgs/Wrench wrench_path_output  # Wrench from path PID controller
 geometry_msgs/Wrench wrench_total_output # Sum of wrench from baseline+path
 geometry_msgs/Wrench wrench_error        # Compared w/ TCP force sensor
