@@ -1,0 +1,13 @@
+# This service just sets the force mode parameters to allow for dynamic updates
+# Call `SetForceMode.srv` for actually entering force mode.
+
+# Force mode damping factor. Sets the damping parameter in force mode. In range [0;1], default value is 0.025
+# A value of 1 is full damping, so the robot will decelerate quickly if no force is present. A value of 0
+# is no damping, here the robot will maintain the speed.
+float32 damping_factor 0.025
+
+# Force mode gain scaling factor. Scales the gain in force mode. scaling parameter is in range [0;2], default is 0.5. 
+# A value larger than 1 can make force mode unstable, e.g. in case of collisions or pushing against hard surfaces.
+float32 gain_scaling 0.5
+---
+bool success
